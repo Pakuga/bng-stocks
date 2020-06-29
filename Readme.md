@@ -1,18 +1,18 @@
-##Basit Yönlendiricili Stok API 
+## Basit Yönlendiricili Stok API 
 Stok API örneği NodeJS ve MongoDB kullanılarak oluşturulmuştur.
 
-####Ayağa kaldırma için gerekli adımlar:
+#### Ayağa kaldırma için gerekli adımlar:
 - Proje klonlanır ve komut satırından dizine girilir.
 - "npm install" ile gerekli kütüphaneler yüklenilir.
 - "node bin/www" komutu ile proje başlatılır.
 
 > Temel değişkenler için (PORT & MongoDB Sunucu parametreleri) .env dosyasını düzenleyebilirsiniz.
 
->Proje /stock route üzerinden sadece GET ve POST taleplerine cevap vermektedir. Sistem başarılı işlemler için "0", başarısız işlemler için "-1" kodunu döndürmektedir
+> Proje /stock route üzerinden sadece GET ve POST taleplerine cevap vermektedir. Sistem başarılı işlemler için "0", başarısız işlemler için "-1" kodunu döndürmektedir
 
 ---
 
-####POST /stock - Kayıt oluşturma
+#### POST /stock - Kayıt oluşturma
 ***Örnek istek body :***
 
     {
@@ -34,8 +34,10 @@ Stok API örneği NodeJS ve MongoDB kullanılarak oluşturulmuştur.
             "created_date": "2019-09-01T15:16:16.000Z"
         }
     }
+
 ---
-####GET /stock - Kayıt listeleme
+
+#### GET /stock - Kayıt listeleme
 ***Cevap :***
 
     {
